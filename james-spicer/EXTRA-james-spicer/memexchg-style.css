@@ -1,0 +1,21 @@
+body {
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    width: 200px;
+    position: absolute;
+    top: 56px;
+    bottom: 100vh;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    background: #272c30;
+    color: #fff;
+    transition: all 0.3s;
+}

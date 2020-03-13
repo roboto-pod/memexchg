@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4d1f26f4-c492-47c3-82c3-97acea78520a" name="Default Changelist" comment="" />
+    <list default="true" id="4d1f26f4-c492-47c3-82c3-97acea78520a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +16,9 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -34,6 +39,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
@@ -106,6 +117,8 @@
       <option name="presentableId" value="Default" />
       <updated>1584057886078</updated>
       <workItem from="1584057889086" duration="2366000" />
+      <workItem from="1584060789154" duration="204000" />
+      <workItem from="1584109294450" duration="451000" />
     </task>
     <servers />
   </component>
@@ -113,25 +126,33 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1877" height="287" key="GridCell.Tab.0.bottom" timestamp="1584059893703">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1396" height="226" key="GridCell.Tab.0.bottom" timestamp="1584060822945">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1396" height="226" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1584060822945" />
     <state width="1877" height="287" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1584059893703" />
-    <state width="1877" height="287" key="GridCell.Tab.0.center" timestamp="1584059893703">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1396" height="226" key="GridCell.Tab.0.center" timestamp="1584060822944">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1396" height="226" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1584060822944" />
     <state width="1877" height="287" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1584059893703" />
-    <state width="1877" height="287" key="GridCell.Tab.0.left" timestamp="1584059893703">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1396" height="226" key="GridCell.Tab.0.left" timestamp="1584060822943">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1396" height="226" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1584060822943" />
     <state width="1877" height="287" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1584059893703" />
-    <state width="1877" height="287" key="GridCell.Tab.0.right" timestamp="1584059893703">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state width="1396" height="226" key="GridCell.Tab.0.right" timestamp="1584060822944">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state width="1396" height="226" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584060822944" />
     <state width="1877" height="287" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1584059893703" />
     <state x="461" y="182" key="SettingsEditor" timestamp="1584060053105">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="182" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1584060053105" />
+    <state x="380" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1584109295279">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="380" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1584109295279" />
   </component>
 </project>
