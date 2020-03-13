@@ -1,0 +1,21 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Actionscript template
+# Build and Release
+public/main.js
+*.map
+node_modules
+bin-debug/
+bin-release/
+[Oo]bj/
+[Bb]in/
+
+# Other files and folders
+.settings/
+
+# Executables
+*.swf
+*.air
+*.ipa
+*.apk
+
+!/js/
