@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meme</title>
+</head>
+<body>
+<img src="img/logo.png">
+
+<!--<input type='file' />-->
+<!--<br><img id="myImg" src="#" alt="your image" height=200 width=100>-->
+
+
+<label>
+    <input type="range" min="0" max="100" value="0" step="1" onchange="applyFilter()" data-filter="blur" data-scale="px">
+</label>Blur<br>
+
+<label>
+    <input type="range" min="0" max="200" value="100" step="1" onchange="applyFilter()" data-filter="brightness" data-scale="%">
+</label>Brightness<br>
+
+<label>
+    <input type="range" min="0" max="200" value="100" step="1" onchange="applyFilter()" data-filter="contrast" data-scale="%">
+</label>Contrast<br>
+
+<label>
+    <input type="range" min="0" max="100" value="0" step="1" onchange="applyFilter()" data-filter="grayscale" data-scale="%">
+</label>Gray Scale<br>
+
+
+<label>
+    <input type="range" min="0" max="360" value="0" step="1" onchange="applyFilter()" data-filter="hue-rotate" data-scale="deg">
+</label>Hue<br>
+
+<label>
+    <input type="range" min="0" max="100" value="0" step="1" onchange="applyFilter()" data-filter="invert" data-scale="%">
+</label>Invert<br>
+
+<label>
+    <input type="range" min="0" max="100" value="100" step="1" onchange="applyFilter()" data-filter="opacity" data-scale="px">
+</label>Opacity<br>
+
+<label>
+    <input type="range" min="0" max="100" value="0" step="1" onchange="applyFilter()" data-filter="saturate" data-scale="">
+</label>Saturate<br>
+
+<label>
+    <input type="range" min="0" max="100" value="0" step="1" onchange="applyFilter()" data-filter="sepia" data-scale="px">
+</label>Sepia<br>
+
+<script type="text/javascript">
+    var image = document.querySelector('img');
+    var filterControls = document.querySelectorAll('input[type=range]');
+
+    function applyFilter () {
+        var computedFilters = '';
+        filterControls.forEach(function(item){
+            computedFilters += item.getAttribute(('data-filter') + '(' + item.value + item.getAttribute('data-scale') + ')' );
+        });
+        image.style.filter = computedFilters;
+    }
+
+
+    // var image = $("img");
+    // // var image = $('img').querySelector();
+    // var filterControls = $('input[type-range]').querySelector();
+    //
+    // function applyFilter() {
+    //     var computedFilters = "";
+    //     filterControls.forEach(function(item, index){
+    //         //image.style.filter
+    //         computedFilters += $('a[data-filter]') + "(" + item.value + $('a[data-scale]') + ") ";
+    //     });
+    //     image.style.filter = computedFilters;
+    // }
+
+    // window.addEventListener('load', function() {
+    //     document.querySelector('input[type="file"]').addEventListener('change', function() {
+    //         if (this.files && this.files[0]) {
+    //             var img = document.querySelector('img');  // $('img')[0]
+    //             img.src = URL.createObjectURL(this.files[0]); // set src to blob url
+    //             img.onload = imageIsLoaded;
+    //         }
+    //     });
+    // });
+    //
+    // function imageIsLoaded() {
+    //     alert(this.src);  // blob url
+    //     // update width and height ...
+    // }
+
+
+</script>
+
+</body>
+</html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Memexchg</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="memexchg-style.css">
 </head>
 <body>
@@ -12,7 +13,8 @@
 <!---------------THIS IS THE NAVBAR START----------------->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">
-        <img src="../UI/logo-memxchg.png" style="width: 100px">
+<!--        <img src="../UI/logo-memxchg.png" style="width: 100px">-->
+        <img src="./img/logo.svg" style="width: 100px">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -35,13 +37,13 @@
 <!---------------------NAVBAR END------------------------->
 
 <!--------------THIS IS CENTER CARD PLACEHOLDER START----------------------->
-<div class="card" style="width: 45em;margin:5em 25em;height: fit-content">
-    <div class="card-body">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus in hac habitasse platea dictumst quisque. Risus feugiat in ante metus dictum. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Nunc mattis enim ut tellus elementum sagittis vitae. Leo vel orci porta non pulvinar neque laoreet suspendisse interdum. Aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod. Varius vel pharetra vel turpis. Nec tincidunt praesent semper feugiat nibh sed pulvinar. Posuere ac ut consequat semper viverra nam libero.
+<!--<div class="card" style="width: 45em;margin:5em 25em;height: fit-content">-->
+<!--    <div class="card-body">-->
+<!--        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus in hac habitasse platea dictumst quisque. Risus feugiat in ante metus dictum. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. Sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Nunc mattis enim ut tellus elementum sagittis vitae. Leo vel orci porta non pulvinar neque laoreet suspendisse interdum. Aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod. Varius vel pharetra vel turpis. Nec tincidunt praesent semper feugiat nibh sed pulvinar. Posuere ac ut consequat semper viverra nam libero.-->
 
-        Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Rhoncus mattis rhoncus urna neque viverra justo nec. Diam ut venenatis tellus in metus. Nulla pellentesque dignissim enim sit amet venenatis. Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Quis enim lobortis scelerisque fermentum dui faucibus in. Tortor at risus viverra adipiscing at. Aliquam sem fringilla ut morbi tincidunt augue interdum velit. Varius duis at consectetur lorem donec massa sapien. Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus in. Sapien pellentesque habitant morbi tristique senectus et. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Consectetur libero id faucibus nisl tincidunt eget nullam. Diam vel quam elementum pulvinar. Lacus vel facilisis volutpat est velit.
-    </div>
-</div>
+<!--        Ultricies leo integer malesuada nunc vel risus commodo viverra maecenas. Rhoncus mattis rhoncus urna neque viverra justo nec. Diam ut venenatis tellus in metus. Nulla pellentesque dignissim enim sit amet venenatis. Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique. Cursus risus at ultrices mi tempus imperdiet nulla malesuada pellentesque. Quis enim lobortis scelerisque fermentum dui faucibus in. Tortor at risus viverra adipiscing at. Aliquam sem fringilla ut morbi tincidunt augue interdum velit. Varius duis at consectetur lorem donec massa sapien. Blandit turpis cursus in hac habitasse platea dictumst quisque sagittis. Faucibus ornare suspendisse sed nisi lacus sed viverra tellus in. Sapien pellentesque habitant morbi tristique senectus et. Eget felis eget nunc lobortis mattis aliquam faucibus purus in. Consectetur libero id faucibus nisl tincidunt eget nullam. Diam vel quam elementum pulvinar. Lacus vel facilisis volutpat est velit.-->
+<!--    </div>-->
+<!--</div>-->
 <!-----------------------CENTER CARD END------------------------------------>
 
 <!----------------THIS IS THE SIDE NAVBAR START------------------------------->
@@ -96,12 +98,99 @@
 </div>
 <!----------------------SIDE NAVBAR END--------------------------------------->
 
+<div class="container" style="width: 45em;margin:5em 25em;height: fit-content">
+    <div class="col-md-6">
+        <div class="form-group">
+            <label>Upload Image</label>
+            <div class="input-group">
+            <span class="input-group-btn">
+                <span class="btn btn-default btn-file">
+                    Browse… <input type="file" id="imgInp">
+                </span>
+            </span>
+                <input type="text" class="form-control" readonly>
+            </div>
+            <img id='img-upload'/>
+        </div>
+    </div>
+</div>
+
+<label>blur</label>
+<input type="range" min="0" max="100" value="0" step="1" onchange="applyFilter()" data-filter="blur" data-scale="px"><br>
+<label>brightness</label>
+<input type="range" min="0" max="200" value="100" step="1" onchange="applyFilter()" data-filter="brightness" data-scale="%"><br>
+<label>contrast</label>
+<input type="range" min="0" max="200" value="100" step="1" onchange="applyFilter()" data-filter="contrast" data-scale="%"><br>
+<label>gray scale</label>
+<input type="range" min="0" max="100" value="0" step="1" onchange="applyFilter()" data-filter="grayscale" data-scale="%"><br>
+<label>hue rotate</label>
+<input type="range" min="0" max="360" value="0" step="1" onchange="applyFilter()" data-filter="hue-rotate" data-scale="deg"><br>
+<label>invert</label>
+<input type="range" min="0" max="100" value="0" step="1" onchange="applyFilter()" data-filter="invert" data-scale="%"><br>
+<label>opacity</label>
+<input type="range" min="0" max="100" value="100" step="1" onchange="applyFilter()" data-filter="blur" data-scale="px"><br>
+<label>saturate</label>
+<input type="range" min="0" max="100" value="0" step="1" onchange="applyFilter()" data-filter="saturate" data-scale=""><br>
+<label>sepia</label>
+<input type="range" min="0" max="100" value="0" step="1" onchange="applyFilter()" data-filter="sepia" data-scale="px"><br>
+
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!--CUSTOM JAVASCRIPT IF NEEDED-->
 <script>
+    var image = $('#img-upload').querySelector();
+    var filterControls = $('input[type-range]').querySelector();
+
+    function applyFilter() {
+        var computedFilters = "";
+        filterControls.forEach(function(item, index){
+            //image.style.filter
+            computedFilters += $('a[data-filter]') + "(" + item.value + $('a[data-scale]') + ") ";
+        });
+        image.style.filter = computedFilters;
+    }
+
+    $(document).ready( function() {
+        $(document).on('change', '.btn-file :file', function () {
+            var input = $(this),
+                label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+            input.trigger('fileselect', [label]);
+        });
+
+        $('.btn-file :file').on('fileselect', function (event, label) {
+
+            var input = $(this).parents('.input-group').find(':text'),
+                log = label;
+
+            if (input.length) {
+                input.val(log);
+            } else {
+                if (log) alert(log);
+            }
+
+        });
+
+        function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#img-upload').attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
+        $("#imgInp").change(function(){
+            readURL(this);
+        });
+    });
+
+
 
 </script>
 

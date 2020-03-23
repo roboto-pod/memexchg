@@ -2,18 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d1f26f4-c492-47c3-82c3-97acea78520a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/james-spicer/EXTRA-james-spicer/index-meme.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/james-spicer/EXTRA-james-spicer/memexchg-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/james-spicer/EXTRA-james-spicer/memexchg-index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/james-spicer/EXTRA-james-spicer/memexchg-style.css" beforeDir="false" afterPath="$PROJECT_DIR$/james-spicer/EXTRA-james-spicer/memexchg-style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -38,7 +55,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -118,7 +135,12 @@
       <updated>1584057886078</updated>
       <workItem from="1584057889086" duration="2366000" />
       <workItem from="1584060789154" duration="204000" />
-      <workItem from="1584109294450" duration="451000" />
+      <workItem from="1584109294450" duration="853000" />
+      <workItem from="1584577552450" duration="193000" />
+      <workItem from="1584579684042" duration="427000" />
+      <workItem from="1584580418978" duration="2588000" />
+      <workItem from="1584667015387" duration="2831000" />
+      <workItem from="1584727523221" duration="93000" />
     </task>
     <servers />
   </component>
@@ -146,13 +168,18 @@
     </state>
     <state width="1396" height="226" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1584060822944" />
     <state width="1877" height="287" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1584059893703" />
+    <state x="332" y="70" key="NewModule_or_Project.wizard" timestamp="1584113005090">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="332" y="70" key="NewModule_or_Project.wizard/0.0.1440.900@0.0.1440.900" timestamp="1584113005090" />
     <state x="461" y="182" key="SettingsEditor" timestamp="1584060053105">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="182" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1584060053105" />
-    <state x="380" y="282" key="com.intellij.ide.util.TipDialog" timestamp="1584109295279">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="380" y="298" key="com.intellij.ide.util.TipDialog" timestamp="1584667024293">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state x="380" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1584109295279" />
+    <state x="380" y="282" key="com.intellij.ide.util.TipDialog/0.0.1440.900@0.0.1440.900" timestamp="1584580421308" />
+    <state x="380" y="298" key="com.intellij.ide.util.TipDialog/0.23.1440.877@0.23.1440.877" timestamp="1584667024293" />
   </component>
 </project>
